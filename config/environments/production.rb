@@ -13,7 +13,7 @@ APPNAME::Application.configure do
   ActionMailer::Base.delivery_method = :smtp
 
   # Configure default host for ActionMailer.
-  config.action_mailer.default_url_options = { :host => "myapp.com" }
+  config.action_mailer.default_url_options = { :host => "MAILHOST" }
 
   # Code is not reloaded between requests
   config.cache_classes = true
