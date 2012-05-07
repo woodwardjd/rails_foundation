@@ -8,7 +8,7 @@ After cloning, find and replace the following items **project-wide**, including 
 
 - APPNAME: The name of the application module.
 
-  E.g. `grep -e APPNAME -r -l . | grep -v README | xargs sed -i 's/APPNAME/NewAppName/g'`
+  E.g. `grep -e APPNAME -r -l . | grep -v README | xargs sed -i '' -e 's/APPNAME/NewAppName/g'`
 
 - MAILHOST: The host that ActionMailer should send from in production.
 
