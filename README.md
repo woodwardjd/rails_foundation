@@ -4,14 +4,17 @@
 
 ### Replace Placeholders
 
-After cloning, find and replace the following items **project-wide**:
+After cloning, find and replace the following items **project-wide**, including in dotfiles (.rvmrc):
 
 - APPNAME: The name of the application module.
+
+  E.g. `grep -e APPNAME -r -l . | grep -v README | xargs sed -i '' -e 's/APPNAME/NewAppName/g'`
+
 - MAILHOST: The host that ActionMailer should send from in production.
 
 ### Migrate Database
 
-Set up your `config/database.yml` with your preferred database configuration. Examples are provided in `config/database.yml.example`. 
+Set up your `config/database.yml` with your preferred database configuration. Examples are provided in `config/database.yml.example`.
 
 You can use `sqlite` or `postgres`. `postgres` is recommended to match up with the production environment.
 
@@ -33,4 +36,4 @@ The following keys are required to be set in `config/secrets.yml` before the app
 
 ## Pre-Set Devise Configuration
 
-Devise is pre-configured using `Manager` as the model. 
+Devise is pre-configured using `Manager` as the model.
