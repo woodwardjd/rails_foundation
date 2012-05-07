@@ -62,9 +62,16 @@ module APPNAME
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     
+    # Precompile additional assets (application.js, application.css are enabled by default.)
+    # config.assets.precompile += %w(active_admin.css active_admin.js)
+        
     # Heroku requires this to be false.
     # http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets
     config.assets.initialize_on_precompile = false
+    
+    # Don't fallback to asset pipeline if a precompiled asset is missed.
+    # This must be true on Heroku.
+    config.assets.compile = true
     
     # Insert Dragonfly middleware with Rack::Cache.
     # http://markevans.github.com/dragonfly/file.Rails3.html
