@@ -22,6 +22,13 @@ gem 'rack-cache', '~> 1.2', require: 'rack/cache'
 # API Keys & Secrets
 gem 'secrets', git: "https://github.com/singlebrook/secrets"
 
+# Include FactoryGirl in all environments in order
+# to use factories in seeds.rb.
+gem 'factory_girl', '~> 3.0.0'
+
+# Fake data.
+gem 'ffaker', '~> 1.14.0'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
