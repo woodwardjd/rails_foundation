@@ -3,7 +3,7 @@ source :rubygems
 gem 'rails', '3.2.3'
 
 # Database
-gem 'pg', '~> 0.13.2' 
+gem 'pg', '~> 0.13.2'
 
 # Authentication
 gem 'devise', '~> 2.0.4'
@@ -41,6 +41,7 @@ group :development do
   gem 'guard',       '~> 1.0.1'
   gem 'guard-spork', '~> 0.6.1'
   gem 'guard-rspec', '~> 0.7.0'
+  gem 'guard-migrate'
 end
 
 group :development, :test do

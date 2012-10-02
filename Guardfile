@@ -20,8 +20,11 @@ guard 'rspec', :version => 2, :cli => "--colour --require turnip --drb --format 
   watch(%r{^spec/support/.+\.rb$})                    { "spec" }
   watch('config/routes.rb')                           { "spec/routing" }
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
-  
+
   # Turnip Features
   watch(%r{^spec/acceptance/.+\.feature$})
 end
 
+guard 'migrate', :seed => true do
+  watch(%r{^db/migrate/(\d+).+\.rb})
+end
