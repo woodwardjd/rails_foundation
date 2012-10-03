@@ -18,7 +18,7 @@ Set up your `config/database.yml` with your preferred database configuration. Ex
 
 You can use `sqlite` or `postgres`. `postgres` is recommended to match up with the production environment.
 
-Once you're done configuring, run `rake db:setup`.
+Once you're done configuring, run `rake db:setup` then `rake db:test:clone`.
 
 ### Run Test Specs
 
