@@ -14,7 +14,7 @@ Spork.prefork do
   require 'rspec/rails'
   require 'rspec/autorun'
   require 'capybara/rspec'
-  require 'draper/rspec_integration'
+  require 'draper/test/rspec_integration'
   require 'turnip/capybara'
 
   RSpec.configure do |config|

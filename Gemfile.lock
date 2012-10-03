@@ -73,22 +73,23 @@ GEM
     diff-lcs (1.1.3)
     dragonfly (0.9.12)
       rack
-    draper (0.11.1)
-      activesupport (>= 2.3.10)
+    draper (0.17.0)
+      actionpack (~> 3.2)
+      activesupport (~> 3.2)
     erubis (2.7.0)
-    excon (0.13.4)
+    excon (0.16.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    factory_girl (3.0.0)
+    factory_girl (4.1.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (3.0.0)
-      factory_girl (~> 3.0.0)
+    factory_girl_rails (4.1.0)
+      factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
-    ffaker (1.14.0)
+    ffaker (1.15.0)
     ffi (1.1.5)
-    fog (1.3.1)
+    fog (1.6.0)
       builder
-      excon (~> 0.13.0)
+      excon (~> 0.14)
       formatador (~> 0.2.0)
       mime-types
       multi_json (~> 1.0)
@@ -99,24 +100,27 @@ GEM
     formatador (0.2.3)
     gherkin (2.11.2)
       json (>= 1.4.6)
-    guard (1.0.3)
-      ffi (>= 0.5.0)
+    guard (1.3.3)
+      listen (>= 0.4.2)
       thor (>= 0.14.6)
-    guard-migrate (0.1.0)
-      guard (>= 0.2.2)
-    guard-rspec (0.7.3)
-      guard (>= 0.10.0)
-    guard-spork (0.6.1)
-      guard (>= 0.10.0)
+    guard-migrate (0.1.6)
+      guard (~> 1.3.0)
+    guard-rspec (2.0.0)
+      guard (>= 1.1)
+      rspec (~> 2.11)
+    guard-spork (1.2.1)
+      childprocess (>= 0.2.3)
+      guard (>= 1.1)
       spork (>= 0.8.4)
-    heroku (2.26.3)
-      heroku-api (~> 0.2.1)
+      sys-proctable
+    heroku (2.32.6)
+      heroku-api (~> 0.3.5)
       launchy (>= 0.3.2)
-      netrc (~> 0.7.2)
+      netrc (~> 0.7.7)
       rest-client (~> 1.6.1)
       rubyzip
-    heroku-api (0.2.1)
-      excon (~> 0.13.3)
+    heroku-api (0.3.5)
+      excon (~> 0.16.1)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -129,6 +133,7 @@ GEM
       addressable (~> 2.3)
     libwebsocket (0.1.5)
       addressable
+    listen (0.5.2)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -143,7 +148,7 @@ GEM
     netrc (0.7.7)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
-    pg (0.13.2)
+    pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.10)
       coderay (~> 1.0.5)
@@ -177,19 +182,19 @@ GEM
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rspec (2.9.0)
-      rspec-core (~> 2.9.0)
-      rspec-expectations (~> 2.9.0)
-      rspec-mocks (~> 2.9.0)
-    rspec-core (2.9.0)
-    rspec-expectations (2.9.1)
+    rspec (2.11.0)
+      rspec-core (~> 2.11.0)
+      rspec-expectations (~> 2.11.0)
+      rspec-mocks (~> 2.11.0)
+    rspec-core (2.11.1)
+    rspec-expectations (2.11.3)
       diff-lcs (~> 1.1.3)
-    rspec-mocks (2.9.0)
-    rspec-rails (2.9.0)
+    rspec-mocks (2.11.3)
+    rspec-rails (2.11.0)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
-      rspec (~> 2.9.0)
+      rspec (~> 2.11.0)
     ruby-hmac (0.4.0)
     rubyzip (0.9.9)
     sass (3.2.1)
@@ -202,7 +207,7 @@ GEM
       libwebsocket (~> 0.1.3)
       multi_json (~> 1.0)
       rubyzip
-    shoulda-matchers (1.1.0)
+    shoulda-matchers (1.3.0)
       activesupport (>= 3.0.0)
     slop (3.3.3)
     spork (1.0.0rc3)
@@ -214,6 +219,7 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.6)
+    sys-proctable (0.9.1)
     thor (0.16.0)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -226,7 +232,7 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    vcr (2.0.1)
+    vcr (2.2.5)
     warden (1.2.1)
       rack (>= 1.0)
     webmock (1.8.11)
@@ -239,36 +245,36 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara (>= 1.1.2)
-  capybara-webkit (>= 0.11.0)
-  coffee-rails (~> 3.2.1)
-  database_cleaner (>= 0.7.2)
-  devise (~> 2.1.2)
+  capybara
+  capybara-webkit
+  coffee-rails
+  database_cleaner
+  devise
   devise-encryptable
-  dragonfly (~> 0.9.10)
-  draper (~> 0.11.1)
-  factory_girl (~> 3.0.0)
-  factory_girl_rails (~> 3.0.0)
-  ffaker (~> 1.14.0)
-  fog (~> 1.3.1)
-  guard (~> 1.0.1)
-  guard-migrate (~> 0.1)
-  guard-rspec (~> 0.7.0)
-  guard-spork (~> 0.6.1)
+  dragonfly
+  draper
+  factory_girl
+  factory_girl_rails
+  ffaker
+  fog
+  guard
+  guard-migrate
+  guard-rspec
+  guard-spork
   jquery-rails (>= 2.0.2)
-  launchy (>= 2.1.0)
-  pg (~> 0.13.2)
-  pry (>= 0.9.8)
-  rack-cache (~> 1.2)
+  launchy
+  pg
+  pry
+  rack-cache
   rails (~> 3.2.8)
   rb-fsevent
-  rspec-rails (~> 2.9.0)
-  sass-rails (~> 3.2.3)
+  rspec-rails
+  sass-rails
   secrets!
-  shoulda-matchers (~> 1.1.0)
-  spork-rails (~> 3.2.0)
-  sqlite3 (>= 1.3.6)
-  turnip (>= 0.3.0)
-  uglifier (>= 1.0.3)
-  vcr (~> 2.0.1)
-  webmock (~> 1.8.6)
+  shoulda-matchers
+  spork-rails
+  sqlite3
+  turnip
+  uglifier
+  vcr
+  webmock
