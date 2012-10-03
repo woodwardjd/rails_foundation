@@ -10,13 +10,13 @@ Spork.prefork do
 
   require File.expand_path("../support/config/devise_reload_hack", __FILE__)
   require File.expand_path("../../config/environment", __FILE__)
-  
+
   require 'rspec/rails'
   require 'rspec/autorun'
   require 'capybara/rspec'
   require 'draper/rspec_integration'
   require 'turnip/capybara'
-  
+
   RSpec.configure do |config|
     # If true, the base class of anonymous controllers will be inferred
     # automatically. This will be the default behavior in future versions of
@@ -36,6 +36,7 @@ Spork.each_run do
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+  Dir.glob("spec/acceptance/**/*steps.rb") { |f| load f, true }
 
   # Require test helper modules.
   RSpec.configure do |config|
