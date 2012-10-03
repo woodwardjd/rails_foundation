@@ -20,7 +20,7 @@ gem 'fog',        '~> 1.3.1'
 gem 'rack-cache', '~> 1.2', require: 'rack/cache'
 
 # API Keys & Secrets
-gem 'secrets', git: "https://github.com/singlebrook/secrets"
+gem 'secrets', git: "https://github.com/singlebrook/secrets", tag: '0.0.7'
 
 # Include FactoryGirl in all environments in order
 # to use factories in seeds.rb.
