@@ -21,9 +21,7 @@ gem 'fog'
 gem 'rack-cache', require: 'rack/cache'
 
 # API Keys & Secrets
-# Leon hasn't been able to push our 0.0.7 version to rubygems, but has
-# asked Reade to give him access to it. When that happens, we can switch.
-gem 'secrets', git: "https://github.com/singlebrook/secrets", tag: '0.0.7'
+gem 'secretive'
 
 # Include FactoryGirl in all environments in order
 # to use factories in seeds.rb.
