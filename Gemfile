@@ -38,10 +38,11 @@ group :assets do
 end
 
 group :development do
-  gem 'guard',       '~> 1.0.1'
-  gem 'guard-spork', '~> 0.6.1'
-  gem 'guard-rspec', '~> 0.7.0'
-  gem 'guard-migrate'
+  gem 'guard',         '~> 1.0.1'
+  gem 'guard-spork',   '~> 0.6.1'
+  gem 'guard-rspec',   '~> 0.7.0'
+  gem 'guard-migrate', '~> 0.1'
+  gem 'rb-fsevent', require: false if RUBY_PLATFORM =~ /darwin/i
 end
 
 group :development, :test do
