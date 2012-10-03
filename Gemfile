@@ -6,7 +6,8 @@ gem 'rails', '~> 3.2.8'
 gem 'pg', '~> 0.13.2'
 
 # Authentication
-gem 'devise', '~> 2.0.4'
+gem 'devise', '~> 2.1.2'
+gem 'devise-encryptable'
 
 # JavaScript Frameworks
 gem 'jquery-rails', '>= 2.0.2'
