@@ -43,7 +43,7 @@ group :development do
   gem 'guard-spork'
   gem 'guard-rspec'
   gem 'guard-migrate'
-  gem 'rb-fsevent', require: false if RUBY_PLATFORM =~ /darwin/i
+  gem 'rb-fsevent', require: false
 end
 
 group :development, :test do
