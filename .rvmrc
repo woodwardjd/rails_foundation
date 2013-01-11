@@ -1,2 +1,2 @@
-rvm install 1.9.3
-rvm use --create 1.9.3@APPNAME
+rvm install 1.9.3-p327
+rvm use --create 1.9.3-p327@APPNAME
