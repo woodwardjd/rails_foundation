@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: rails_foundation_dev
+  pool: 5
+  timeout: 5000
+  min_messages: warning
+
+test:
+  adapter: postgresql
+  database: rails_foundation_test
+  pool: 5
+  timeout: 5000
+  min_messages: warning
