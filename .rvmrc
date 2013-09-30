@@ -1,2 +1,2 @@
 rvm install 2.0.0-p247
-rvm use --create 2.0.0-p247@APPNAME
+rvm use --create 2.0.0-p247@RailsFoundation
