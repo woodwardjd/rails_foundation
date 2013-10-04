@@ -54,5 +54,16 @@ group :development do
   # Inspect running code
   gem 'pry'
 
+  # Run tests quickly by keeping app loaded in memory
+  gem 'spork-rails'
+  gem 'spork-minitest'
 
+  # General-purpose file watcher
+  gem 'guard'
+  # Run tests automatically
+  gem 'guard-minitest'
+  # Integrate Guard and Spork
+  gem 'guard-spork'
+  # Run database migrations automatically
+  gem 'guard-migrate'
 end
