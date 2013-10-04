@@ -71,3 +71,10 @@ end
 group :test do
   gem 'minitest-reporters'
 end
+
+group :development, :test do
+  # If you want to use factories outside tests, eg. in seeds,
+  # just `require factory_girl`.  Don't move the gem outside the
+  # test group.  It's a waste of memory to load it in production.
+  gem 'factory_girl_rails'
+end
