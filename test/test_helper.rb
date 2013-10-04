@@ -5,10 +5,15 @@ Spork.prefork do
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 
+  # Boilerplate Rails stuff
   ENV["RAILS_ENV"] ||= "test"
   require File.expand_path('../../config/environment', __FILE__)
   require 'rails/test_help'
+
+  # Provides minitest/spec DSL, automatic running of loaded tests
   require 'minitest/autorun'
+
+  # Improve test output appearance
   require 'minitest/reporters'
   MiniTest::Reporters.use! MiniTest::Reporters::ProgressReporter.new
 
