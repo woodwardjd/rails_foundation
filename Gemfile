@@ -67,3 +67,7 @@ group :development do
   # Run database migrations automatically
   gem 'guard-migrate'
 end
+
+group :test do
+  gem 'minitest-reporters'
+end

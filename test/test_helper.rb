@@ -9,6 +9,8 @@ Spork.prefork do
   require File.expand_path('../../config/environment', __FILE__)
   require 'rails/test_help'
   require 'minitest/autorun'
+  require 'minitest/reporters'
+  MiniTest::Reporters.use! MiniTest::Reporters::ProgressReporter.new
 
   class ActiveSupport::TestCase
     ActiveRecord::Migration.check_pending!
