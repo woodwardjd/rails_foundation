@@ -22,9 +22,11 @@ Spork.prefork do
     ActiveRecord::Migration.check_pending!
   end
 
+  # "load Mocha after loading the relevant test library"
+  # https://github.com/freerange/mocha
+  require "mocha/setup"
 end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-
 end
