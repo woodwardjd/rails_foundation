@@ -4,6 +4,7 @@ describe 'Home page integration' do
   it 'renders' do
     visit root_path
     body.must_include 'Hi there'
+    find('#root-path').text.must_equal '/'
   end
 
   2.times do
