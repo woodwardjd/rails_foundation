@@ -7,3 +7,21 @@
 4. `cp config/database.example.yml config/database.yml` and edit `config/database.yml` as needed.
 5. `bundle exec rake db:create`
 6. `bundle exec rake test` and verify that everything is green!
+
+# Running tests
+
+`bundle exec guard -c`
+
+Guard will run all of your tests, then patiently watch your files for changes and run the appropriate tests.
+
+# Starting the application
+
+If foreman is installed:
+
+1. `foreman start`
+2. Visit http://[project].lvh.me:5000
+
+Otherwise:
+
+1. `bundle exec rails s`
+2. Visit http://[project].lvh.me:3000
