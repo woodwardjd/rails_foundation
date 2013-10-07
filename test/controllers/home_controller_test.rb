@@ -1,7 +1,7 @@
 require 'test_helper'
 
 describe HomeController do
-  it 'renders #index' do
+  it 'should get #index' do
     get :index
     assert response.success?
   end
