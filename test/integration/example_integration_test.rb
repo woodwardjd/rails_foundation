@@ -1,9 +1,9 @@
 require 'integration_test_helper'
 
 describe 'Home page integration' do
-  it 'renders an error' do
-    visit '/'
-    body.must_include 'No route matches'
+  it 'renders' do
+    visit root_path
+    body.must_include 'Hi there'
   end
 
   2.times do

@@ -8,6 +8,7 @@ guard 'spork', minitest: true, test_unit: false do
   watch('config/environment.rb')
   watch('config/environments/test.rb')
   watch(%r{^config/initializers/.+\.rb$})
+  watch('config/routes.rb')
   watch('Gemfile.lock')
   watch('test/test_helper.rb')
   watch('test/integration_test_helper.rb')
