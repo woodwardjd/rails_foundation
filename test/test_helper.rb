@@ -26,20 +26,17 @@ Spork.prefork do
 
     # Don't run tests when migrations are pending
     ActiveRecord::Migration.check_pending!
+
+    DatabaseCleaner.strategy = :transaction
+
+    before(:each) do
+      DatabaseCleaner.start
+    end
+
+    after(:each) do
+      DatabaseCleaner.clean
+    end
   end
-
-  # class ControllerSpec < MiniTest::Spec
-  #   include Rails.application.routes.url_helpers
-  #   include ActionController::TestCase::Behavior
-
-  #   before do
-  #     @routes = Rails.application.routes
-  #   end
-  # end
-
-  # # Test subjects ending with 'Controller' are treated as functional tests
-  # #   e.g. describe TestController do ...
-  # MiniTest::Spec.register_spec_type( /Controller$/, ControllerSpec )
 
   # "load Mocha after loading the relevant test library"
   # https://github.com/freerange/mocha

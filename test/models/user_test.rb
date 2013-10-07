@@ -1,8 +1,12 @@
 require 'test_helper'
 
 describe User do
-  it "has a name" do
-    build(:user).name.must_equal "John Doe"
+  it "has a valid factory" do
+    create(:user).valid?.must_equal true
+  end
+
+  it 'cleans the database after each test' do
+    User.all.count.must_equal 0
   end
 
   it "can be stubbed with mocha" do

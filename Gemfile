@@ -72,11 +72,22 @@ group :development do
 end
 
 group :test do
+  # Prettier test output
   gem 'minitest-reporters'
 
   # Mocking and stubbing
-  # https://github.com/freerange/mocha
+  # require postponed until after the test library in test_helper.rb
   gem "mocha", :require => false
+  # Database cleanup
+  gem 'database_cleaner'
+
+  ###################
+  # The following are for integration testing. They are not require'd by default
+  # because requiring them slows our non-integration tests. They will be manually
+  # require'd when needed.
+
+  # Headless browser
+  gem 'capybara-webkit', require: false
 end
 
 group :development, :test do
