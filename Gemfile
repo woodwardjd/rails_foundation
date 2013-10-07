@@ -73,6 +73,10 @@ end
 
 group :test do
   gem 'minitest-reporters'
+
+  # Mocking and stubbing
+  # https://github.com/freerange/mocha
+  gem "mocha", :require => false
 end
 
 group :development, :test do
