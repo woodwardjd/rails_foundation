@@ -25,6 +25,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Authentication
+gem 'devise', '~> 3.1'
+
 # App-specific configuration, including secrets
 # dotenv is preferable to secretive because it works with
 # foreman, and has no dependencies.
