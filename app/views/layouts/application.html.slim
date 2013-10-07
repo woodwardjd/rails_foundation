@@ -7,4 +7,9 @@ html
   = csrf_meta_tags
 
 body
+
+  / Flash messages, required by devise
+  p.notice= notice
+  p.alert= alert
+
   = yield
