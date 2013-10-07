@@ -30,6 +30,9 @@ gem 'jquery-rails'
 # foreman, and has no dependencies.
 gem 'dotenv'
 
+# Decorators: an object-oriented layer of presentation logic
+gem 'draper', '~> 1.0'
+
 # Turbolinks makes following links in your web application faster.
 # Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
