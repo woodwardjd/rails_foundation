@@ -13,8 +13,12 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require webshims/extras/modernizr-custom
-//= require webshims/polyfiller
+
+// These come from /vendor/assets/javascripts . It's vendored because the
+// webshims-rails gem does not play nicely with Rails 4.
+//= require webshims/src/extras/modernizr-custom
+//= require webshims/src/polyfiller
+
 //= require js-routes
 //= require_tree .
 //= require turbolinks

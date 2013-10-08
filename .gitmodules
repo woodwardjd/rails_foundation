@@ -1,0 +1,3 @@
+[submodule "vendor/assets/javascripts/webshims"]
+	path = vendor/assets/javascripts/webshims
+	url = git://github.com/aFarkas/webshim.git
