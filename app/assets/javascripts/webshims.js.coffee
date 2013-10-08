@@ -18,5 +18,4 @@ $.webshims.polyfill([])
 
 # Turbolinks support
 $(document).on "page:load", ->
-  console.log "polyfilling"
   $(this).updatePolyfill()

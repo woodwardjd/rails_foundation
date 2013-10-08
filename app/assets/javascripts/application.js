@@ -11,9 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require webshims/extras/modernizr-custom
 //= require webshims/polyfiller
 //= require js-routes
 //= require_tree .
+//= require turbolinks
