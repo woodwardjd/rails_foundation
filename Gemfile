@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-###############################
 # Core Frameworks
+# ============================
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -18,15 +18,16 @@ gem 'jquery-turbolinks'
 # Authentication
 gem 'devise', '~> 3.1'
 
-###############################
+
 # App Servers
+# ============================
 
 # Use unicorn as the app server
 gem 'unicorn'
 
 
-###############################
 # DSLs for happier coding
+# ============================
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -41,8 +42,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jbuilder', '~> 1.2'
 
 
-###############################
 # Asset Management
+# ============================
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -51,8 +52,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 
-###############################
 # Javascript Libraries
+# ============================
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -62,15 +63,15 @@ gem 'jquery-rails'
 gem 'js-routes'
 
 
-###############################
 # OO Programming Support
+# ============================
 
 # Decorators: an object-oriented layer of presentation logic
 gem 'draper', '~> 1.0'
 
 
-###############################
 # Deployment Support
+# ============================
 
 # App-specific configuration, including secrets
 # dotenv is preferable to secretive because it works with
