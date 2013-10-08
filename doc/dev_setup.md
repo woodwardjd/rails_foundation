@@ -16,8 +16,10 @@
 ## Setup Secrets
 
 1. `cp .env.example .env`
-2. Generate a DEVISE_SECRET_KEY with `bundle exec rake secret`
-3. Paste the generated key into `.env` as your DEVISE_SECRET_KEY
+2. Use `bundle exec rake secret` to generate keys for, eg.
+  * DEVISE_SECRET_KEY
+  * RAILS_SECRET_KEY_BASE
+3. Paste the generated keys into `.env`
 
 ## Running tests
 

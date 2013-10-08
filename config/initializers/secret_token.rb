@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RailsFoundation::Application.config.secret_key_base = '3e2d960a7a0b0817d80affe45348963389df087f6268e2e7dff48c6ece43d0fbfe8fd7473d5cdc31d148dd8e6c12bbaedd52c1daad6a9516b3e80897d06efa6a'
+RailsFoundation::Application.config.secret_key_base = ENV.fetch('RAILS_SECRET_KEY_BASE')
