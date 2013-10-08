@@ -113,6 +113,9 @@ group :development do
   gem 'guard-spork'
   # Run database migrations automatically
   gem 'guard-migrate'
+
+  # Turn off the asset pipeline log
+  gem 'quiet_assets'
 end
 
 group :test do
