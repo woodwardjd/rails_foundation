@@ -23,9 +23,11 @@ Find and replace the following items **project-wide**, including in dotfiles:
     grep -e rails_foundation -r -l . | xargs sed -i '' -e 's/rails_foundation/your_app_name/g'
 
 
-#### Default Email From Address
+#### Default Email Addresses
 
 Replace `please-change-me@example.com` in `config/initializers/devise.rb`.
+
+Replace email addresses in the `ExceptionNotification` setup in `config/environments/production.rb`.
 
 #### Fill in holes in docs
 

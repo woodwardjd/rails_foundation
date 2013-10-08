@@ -70,6 +70,8 @@ gem 'draper', '~> 1.0'
 # foreman, and has no dependencies.
 gem 'dotenv'
 
+# Emails us error reports
+gem 'exception_notification'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
