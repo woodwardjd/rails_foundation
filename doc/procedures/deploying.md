@@ -2,7 +2,7 @@
 
 ## Setup
 
-In order to have deployment privileges...
+In order to have deployment privileges... FILL ME IN
 
 ## Production
 

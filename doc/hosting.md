@@ -1,8 +1,8 @@
 # Hosting
 
-This application is hosted at ....
+This application is hosted at.... FILL ME IN
 
-The production hostname is ...
+The production hostname is... FILL ME IN
 
 ## Setup
 
