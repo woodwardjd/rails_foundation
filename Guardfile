@@ -1,3 +1,5 @@
+logger level: :warn
+
 guard 'migrate', seed: true do
   watch(%r{^db/migrate/(\d+).+\.rb})
   watch('db/seeds.rb')
