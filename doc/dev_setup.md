@@ -31,12 +31,5 @@ If you're changing branches and doing merges, you may want to ask guard to pause
 
 ## Starting the application
 
-If foreman is installed:
-
 1. `foreman start`
 2. Visit http://[project].lvh.me:5000
-
-Otherwise:
-
-1. `bundle exec rails s`
-2. Visit http://[project].lvh.me:3000

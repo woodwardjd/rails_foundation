@@ -18,6 +18,12 @@ gem 'jquery-turbolinks'
 # Authentication
 gem 'devise', '~> 3.1'
 
+###############################
+# App Servers
+
+# Use unicorn as the app server
+gem 'unicorn'
+
 
 ###############################
 # DSLs for happier coding
@@ -82,9 +88,6 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
@@ -94,6 +97,8 @@ end
 group :development do
   # Inspect running code
   gem 'pry'
+  # ...even when running in foreman
+  gem 'pry-remote'
 
   # Run tests quickly by keeping app loaded in memory
   gem 'spork-rails'
