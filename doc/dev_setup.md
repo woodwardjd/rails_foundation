@@ -16,7 +16,7 @@
 ## Setup Secrets
 
 1. `cp .env.example .env`
-2. `bin/generate_devise_key.rb`
+2. Generate a DEVISE_SECRET_KEY with `bundle exec rake secret`
 3. Paste the generated key into `.env` as your DEVISE_SECRET_KEY
 
 ## Running tests
