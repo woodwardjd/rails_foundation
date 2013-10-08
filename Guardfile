@@ -3,7 +3,7 @@ guard 'migrate', seed: true do
   watch('db/seeds.rb')
 end
 
-guard 'spork', minitest: true, test_unit: false do
+guard 'spork', minitest: true, test_unit: false, quiet: true do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
