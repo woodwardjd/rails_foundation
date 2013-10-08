@@ -1,3 +1,7 @@
+# Tell ruby not to buffer stdout
+# https://github.com/ddollar/foreman/wiki/Missing-Output
+$stdout.sync = true
+
 RailsFoundation::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
