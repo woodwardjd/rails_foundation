@@ -9,7 +9,7 @@ git push -f --tags
 
 # If deploying to Heroku, edit and uncomment the heroku command below.
 # You might need to install https://github.com/singlebrook/heroku-deploy-rails
-# heroku deploy:rails --branch production --app [app] $1
+# heroku deploy:rails --branch production --app [project] $1
 
 # If deploying elsewhere, make sure capistrano is set up and uncomment the
 # cap command below.
