@@ -1,20 +1,35 @@
 # Setting up your development environment
 
+## Install project and ruby gems
+
 1. Install dependencies
   * Install QT for capybara-webkit (whichis used in integration tests). If you're on OS X and have Homebrew, `brew install qt` will do it.
 2. `git clone git@github.com:[owner]/[project].git --recursive`
 3. `cd [project]; bundle install`
-4. `cp config/database.example.yml config/database.yml` and edit `config/database.yml` as needed.
-5. `bundle exec rake db:create`
-6. `bundle exec rake test` and verify that everything is green!
 
-# Running tests
+## Setup Databases
+
+1. `cp config/database.example.yml config/database.yml`
+2. Edit it to change `rails_foundation` to the name of your app.
+3. `bundle exec rake db:create`
+
+## Setup Secrets
+
+1. `cp .env.example .env`
+2. `bin/generate_devise_key.rb`
+3. Paste the generated key into `.env` as your DEVISE_SECRET_KEY
+
+## Running tests
+
+If you've done the above steps correctly, your test suite should be green. Run it with:
 
 `bundle exec guard -c`
 
-Guard will run all of your tests, then patiently watch your files for changes and run the appropriate tests.
+Guard will run all of your tests, then patiently watch your files for changes and run the appropriate tests. You should do this each time you start coding.
 
-# Starting the application
+If you're changing branches and doing merges, you may want to ask guard to pause its watching with `p [return]` to avoid a lot of test running and transient failures, but make sure to run all of the tests (`[return]`)before you push to origin!
+
+## Starting the application
 
 If foreman is installed:
 

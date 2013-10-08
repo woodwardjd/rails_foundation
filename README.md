@@ -4,29 +4,32 @@
 
 ### Replace Placeholders
 
+After cloning this repo, you'll need to replace some placeholders.
+
+#### Owner and Project Name
+
+Replace all occurrences of `[owner]` and `[project]`.
+
 #### Application Name
 
-After cloning, find and replace the following items **project-wide**, including in dotfiles:
+Find and replace the following items **project-wide**, including in dotfiles:
 
 - RailsFoundation -> The name of your application.
 
     grep -e RailsFoundation -r -l . | xargs sed -i '' -e 's/RailsFoundation/YourAppName/g'
 
+- rails_foundation -> The variable-named version of your application's name.
+
+    grep -e rails_foundation -r -l . | xargs sed -i '' -e 's/rails_foundation/your_app_name/g'
+
+
 #### Default Email From Address
 
 Replace `please-change-me@example.com` in `config/initializers/devise.rb`.
 
-### Setup Databases
+#### Fill in holes in docs
 
-1. `cp config/database.example.yml config/database.yml`
-2. Edit it to change `rails_foundation` to the name of your app.
-3. `bundle exec rake db:create`
-
-### Setup Secrets
-
-1. `cp .env.example .env`
-2. `bin/generate_devise_key.rb`
-3. Paste the generated key into `.env` as your DEVISE_SECRET_KEY
+Search for `FILL ME IN` and fill 'em in!
 
 ### Destroy These Instructions
 
