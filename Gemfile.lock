@@ -64,6 +64,9 @@ GEM
       activesupport (>= 3.0)
       request_store (~> 1.0.3)
     erubis (2.7.0)
+    exception_notification (4.0.1)
+      actionmailer (>= 3.0.4)
+      activesupport (>= 3.0.4)
     execjs (2.0.2)
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
@@ -99,8 +102,8 @@ GEM
     js-routes (0.9.3)
       rails (>= 3.2)
     json (1.8.0)
-    listen (2.0.0)
-      celluloid (>= 0.15.1)
+    listen (2.0.1)
+      celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     lumberjack (1.0.4)
@@ -217,6 +220,7 @@ DEPENDENCIES
   devise (~> 3.1)
   dotenv
   draper (~> 1.0)
+  exception_notification
   factory_girl_rails
   guard
   guard-migrate
