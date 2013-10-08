@@ -1,11 +1,24 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
+###############################
+# Core Frameworks
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
 # Use PostgreSQL as the database for Active Record
 gem 'pg'
+
+# Turbolinks makes following links in your web application faster.
+# Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Authentication
+gem 'devise', '~> 3.1'
+
+###############################
+# DSLs for happier coding
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -13,39 +26,49 @@ gem 'sass-rails', '~> 4.0.0'
 # Slim templates
 gem 'slim-rails'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
+
+
+###############################
+# Asset Management
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
+###############################
+# Javascript Libraries
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# Authentication
-gem 'devise', '~> 3.1'
+# `js-routes` - Generates javascript file that defines all Rails named
+# routes as javascript helpers. https://github.com/railsware/js-routes
+gem 'js-routes'
+
+
+###############################
+# OO Programming Support
+
+# Decorators: an object-oriented layer of presentation logic
+gem 'draper', '~> 1.0'
+
+
+###############################
+# Deployment Support
 
 # App-specific configuration, including secrets
 # dotenv is preferable to secretive because it works with
 # foreman, and has no dependencies.
 gem 'dotenv'
 
-# Decorators: an object-oriented layer of presentation logic
-gem 'draper', '~> 1.0'
-
-# Turbolinks makes following links in your web application faster.
-# Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
-
-# `js-routes` - Generates javascript file that defines all Rails named
-# routes as javascript helpers. https://github.com/railsware/js-routes
-gem 'js-routes'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
