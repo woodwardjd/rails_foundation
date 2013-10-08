@@ -55,10 +55,6 @@ gem 'jquery-rails'
 # routes as javascript helpers. https://github.com/railsware/js-routes
 gem 'js-routes'
 
-# Improve older browsers
-# Version-locked because we have to copy the shim files into /public/webshims/shims
-# each time we update it. See full explanation in webshims.js.coffee.
-gem 'webshims-rails', '1.11.1'
 
 ###############################
 # OO Programming Support
