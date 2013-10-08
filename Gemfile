@@ -17,6 +17,7 @@ gem 'turbolinks'
 # Authentication
 gem 'devise', '~> 3.1'
 
+
 ###############################
 # DSLs for happier coding
 
