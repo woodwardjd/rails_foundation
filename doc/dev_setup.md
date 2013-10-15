@@ -7,12 +7,6 @@
 2. `git clone git@github.com:[owner]/[project].git --recursive`
 3. `cd [project]; bundle install`
 
-## Setup Databases
-
-1. `cp config/database.example.yml config/database.yml`
-2. Edit it to change `rails_foundation` to the name of your app.
-3. `bundle exec rake db:create`
-
 ## Setup Secrets
 
 1. `cp .env.example .env`
@@ -20,6 +14,13 @@
   * DEVISE_SECRET_KEY
   * RAILS_SECRET_KEY_BASE
 3. Paste the generated keys into `.env`
+
+## Setup Databases
+
+1. `cp config/database.example.yml config/database.yml`
+2. Edit it as necessary for your local database setup.
+3. `bundle exec rake db:setup`
+4. `bundle exec rake db:test:prepare`
 
 ## Running tests
 

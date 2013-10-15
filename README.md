@@ -33,6 +33,10 @@ Replace email addresses in the `ExceptionNotification` setup in `config/environm
 
 Search for `FILL ME IN` and fill 'em in!
 
+#### Set up your local dev env
+
+Follow additional setup instructions in [dev_setup.md](doc/dev_setup.md).
+
 ### Destroy These Instructions
 
 Delete everything from here on up!
