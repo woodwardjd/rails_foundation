@@ -96,11 +96,6 @@ end
 # gem 'debugger', group: [:development, :test]
 
 group :development do
-  # Inspect running code
-  gem 'pry'
-  # ...even when running in foreman
-  gem 'pry-remote'
-
   # Run tests quickly by keeping app loaded in memory
   gem 'spork-rails'
   gem 'spork-minitest'
@@ -142,4 +137,9 @@ group :development, :test do
   # just `require factory_girl`.  Don't move the gem outside the
   # test group.  It's a waste of memory to load it in production.
   gem 'factory_girl_rails'
+
+  # Inspect running code
+  gem 'pry'
+  # ...even when running in foreman
+  gem 'pry-remote'
 end
