@@ -37,6 +37,13 @@ Search for `FILL ME IN` and fill 'em in!
 
 Follow additional setup instructions in [dev_setup.md](doc/dev_setup.md).
 
+#### Enable serving of static assets
+
+If you're going to host on Heroku, change `config.serve_static_assets` to `true` in `/config/environments/production.rb`.
+If you don't do this, your stylesheets and JS files will 404.
+
+Or, plan to use an asset host.
+
 ### Destroy These Instructions
 
 Delete everything from here on up!
