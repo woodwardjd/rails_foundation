@@ -17,6 +17,7 @@ Spork.prefork do
     # Integration tests can't use database transactions because queries may
     # be running via multiple database connections.
     DatabaseCleaner.strategy = :truncation
+    self.use_transactional_fixtures = false
   end
 end
 
