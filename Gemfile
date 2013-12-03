@@ -114,6 +114,9 @@ group :development do
 end
 
 group :test do
+  # Integrate minitest-spec with activesupport test classes
+  gem 'minitest-spec-rails'
+
   # Prettier test output
   gem 'minitest-reporters'
 

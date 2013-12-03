@@ -4,9 +4,7 @@ Spork.prefork do
   require 'capybara/rails'
   require 'capybara-webkit'
 
-  class IntegrationSpec < MiniTest::Spec
-    include Rails.application.routes.url_helpers
-
+  class ActionDispatch::IntegrationTest
     # Provides things like "visit", "page", "body", etc
     include Capybara::DSL
 
@@ -20,9 +18,6 @@ Spork.prefork do
     # be running via multiple database connections.
     DatabaseCleaner.strategy = :truncation
   end
-
-  # Test subjects ending with 'integration' are treated as integration tests
-  MiniTest::Spec.register_spec_type( /integration$/i, IntegrationSpec )
 end
 
 Spork.each_run do

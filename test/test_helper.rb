@@ -17,7 +17,7 @@ Spork.prefork do
   require 'minitest/reporters'
   MiniTest::Reporters.use! MiniTest::Reporters::ProgressReporter.new
 
-  class MiniTest::Spec
+  class ActiveSupport::TestCase
     # I think this gives us support for the before/after methods
     include ActiveSupport::Testing::SetupAndTeardown
 
@@ -38,18 +38,9 @@ Spork.prefork do
     end
   end
 
-  class ControllerSpec < MiniTest::Spec
-    include Rails.application.routes.url_helpers
-    include ActionController::TestCase::Behavior
-
-    before do
-      @routes = Rails.application.routes
-    end
+  class ActionController::TestCase
+    include Devise::TestHelpers
   end
-
-  # Test subjects ending with 'Controller' are treated as functional tests
-  #   e.g. describe TestController do ...
-  MiniTest::Spec.register_spec_type( /Controller$/, ControllerSpec )
 
   # "load Mocha after loading the relevant test library"
   # https://github.com/freerange/mocha

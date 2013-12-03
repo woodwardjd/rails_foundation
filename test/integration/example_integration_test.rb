@@ -1,6 +1,6 @@
 require 'integration_test_helper'
 
-describe 'Home page integration' do
+class ExampleIntegrationTest < ActionDispatch::IntegrationTest
   it 'renders' do
     visit root_path
     body.must_include 'Hi there'
