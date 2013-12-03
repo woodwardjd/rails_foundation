@@ -1,6 +1,6 @@
 require 'test_helper'
 
-describe User do
+class UserTest < ActiveSupport::TestCase
   it "has a valid factory" do
     create(:user).valid?.must_equal true
   end

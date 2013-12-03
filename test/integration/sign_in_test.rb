@@ -1,6 +1,6 @@
 require 'integration_test_helper'
 
-describe 'sign in integration' do
+class SignInTest < ActionDispatch::IntegrationTest
   it 'succeeds' do
     visit '/users/sign_in'
 
