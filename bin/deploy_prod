@@ -5,7 +5,7 @@ exit 1
 
 git fetch --tags
 git tag -f production
-git push -f --tags
+git push -f origin production
 
 # If deploying to Heroku, edit and uncomment the heroku command below.
 # You might need to install https://github.com/singlebrook/heroku-deploy-rails
