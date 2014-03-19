@@ -51,6 +51,11 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# CSS Libraries
+# ============================
+
+# Normalize stylesheet to make all browsers style things the same
+gem 'normalize-rails'
 
 # Javascript Libraries
 # ============================

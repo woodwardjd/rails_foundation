@@ -1,0 +1,20 @@
+// This file imports all of our SCSS.
+// SCSS structure is based on SMACSS, with some of our own terminology.
+// See http://wiki.singlebrook.com/Coding/CSS-Coding-Style for details.
+
+// Variables to be used in other SCSS files
+@import 'variables/**/*';
+
+// Bare-bones styling that will apply site-wide
+@import 'base';
+
+// Layout styles dictate how components are placed on the page.
+@import 'layout';
+
+// Components are the building blocks of the site.
+// Uncomment this as soon as you add the first one.
+//@import 'components/**/*';
+
+// States are classes applied to components via JS.
+// Uncomment this as soon as you add the first one.
+//@import 'states/**/*';
