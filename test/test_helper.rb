@@ -24,9 +24,6 @@ Spork.prefork do
     # Allows us to use build/create/build_stubbed without the "FactoryGirl." prefix
     include FactoryGirl::Syntax::Methods
 
-    # Don't run tests when migrations are pending
-    ActiveRecord::Migration.check_pending!
-
     DatabaseCleaner.strategy = :transaction
 
     before(:each) do
