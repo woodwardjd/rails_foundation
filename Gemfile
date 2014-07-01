@@ -102,9 +102,7 @@ end
 
 group :development do
   # Run tests quickly by keeping app loaded in memory
-  gem 'spork-rails'
-  gem 'spork-minitest'
-
+  gem "spring"
   # General-purpose file watcher
   gem 'guard'
   # Run tests automatically
@@ -113,7 +111,6 @@ group :development do
   gem 'guard-spork'
   # Run database migrations automatically
   gem 'guard-migrate'
-
   # Turn off the asset pipeline log
   gem 'quiet_assets'
 end
