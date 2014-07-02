@@ -78,10 +78,11 @@ gem 'draper', '~> 1.0'
 # Deployment Support
 # ============================
 
-# App-specific configuration, including secrets
-# dotenv is preferable to secretive because it works with
-# foreman, and has no dependencies.
-gem 'dotenv'
+# Environment-specific configuration, including secrets.
+# Works automatically with Foreman.
+# Works alongside Rails' secrets.yml, which loads
+# env vars into Rails.application.secrets
+gem 'dotenv-rails'
 
 # Emails us error reports
 gem 'exception_notification'
