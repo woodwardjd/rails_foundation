@@ -10,10 +10,12 @@
 ## Setup Secrets
 
 1. `cp .env.example .env`
-2. Use `bundle exec rake secret` to generate keys for, eg.
+2. `cp config/secrets.yml.example config/secrets.yml`
+3. Use `bundle exec rake secret` to generate keys for, eg.
   * DEVISE_SECRET_KEY
   * RAILS_SECRET_KEY_BASE
-3. Paste the generated keys into `.env`
+4. Paste the generated keys into `.env`
+5. Paste the generated secret_key_base into `config/secrets.yml` in the development and test sections.
 
 ## Setup Databases
 
