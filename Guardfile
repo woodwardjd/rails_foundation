@@ -5,7 +5,7 @@ guard 'migrate', seed: true do
   watch('db/seeds.rb')
 end
 
-guard 'minitest', drb: true do
+guard 'minitest', spring: 'bin/rake test', all_on_start: false do
   watch(%r|^test/test_helper\.rb|)    { "test" }
   watch(%r|^test/integration_test_helper\.rb|) { "test/integration" }
 
