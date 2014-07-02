@@ -108,8 +108,6 @@ group :development do
   gem 'guard'
   # Run tests automatically
   gem 'guard-minitest'
-  # Integrate Guard and Spork
-  gem 'guard-spork'
   # Run database migrations automatically
   gem 'guard-migrate'
   # Turn off the asset pipeline log

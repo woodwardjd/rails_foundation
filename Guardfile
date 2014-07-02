@@ -5,17 +5,6 @@ guard 'migrate', seed: true do
   watch('db/seeds.rb')
 end
 
-guard 'spork', minitest: true, test_unit: false, quiet: true do
-  watch('config/application.rb')
-  watch('config/environment.rb')
-  watch('config/environments/test.rb')
-  watch(%r{^config/initializers/.+\.rb$})
-  watch('config/routes.rb')
-  watch('Gemfile.lock')
-  watch('test/test_helper.rb')
-  watch('test/integration_test_helper.rb')
-end
-
 guard 'minitest', drb: true do
   watch(%r|^test/test_helper\.rb|)    { "test" }
   watch(%r|^test/integration_test_helper\.rb|) { "test/integration" }
