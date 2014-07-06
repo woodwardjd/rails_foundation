@@ -16,6 +16,7 @@
   * RAILS_SECRET_KEY_BASE
 4. Paste the generated keys into `.env`
 5. Paste the generated secret_key_base into `config/secrets.yml` in the development and test sections.
+6. OPTIONAL: deploying to heroku?  Consider adding [heroku_secrets](https://github.com/alexpeattie/heroku_secrets) to the `Gemfile`.  It reads \_SECRET\_{key} into `config/secrets.yml`'s {key} entry, more or less, so you can set secrets using `heroku config:set SECRET_KEY_BASE=asdf`, for instance
 
 ## Setup Databases
 
@@ -36,5 +37,5 @@ If you're changing branches and doing merges, you may want to ask guard to pause
 
 ## Starting the application
 
-1. `foreman start`
+1. `foreman start` (don't forget to `gem install foreman`)
 2. Visit http://[project].lvh.me:5000
